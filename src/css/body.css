@@ -1,4 +1,5 @@
 body {
+    margin: 0;
     background: #040404;
     font-family: inter;
     color: #F1F1F1;
@@ -25,16 +26,17 @@ nav {
 }
 
 .verificaçaõ-- {
+    padding-right: 134px;
     padding-top: 80px;
     padding-left: 134px;
     display: flex;
-    width: 703px;
     flex-direction: column;
     align-items: flex-start;
     gap: 48px;
 }
 
 .conju--verifi {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 18px;
@@ -144,13 +146,14 @@ nav {
 
 .button-code {
     margin: 0;
-    width: 90%;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .button-procurar-code {
     color: var(--black---2, #080808);
+    width: 100%;
 
     /* TT BT 1 */
     font-family: Inter;
@@ -163,7 +166,7 @@ nav {
 
     display: flex;
     width: 100%;
-    padding: 20px 40px;
+    padding: 20px 0px;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -192,4 +195,59 @@ nav {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+@media (max-width: 970px) {
+    .verificaçaõ-- {
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .verificaçaõ-- {
+        width: 703px;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .none {
+        display: none;
+    }
+
+    .verificaçaõ-- {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+}
+
+@media (max-width: 500px) {
+    nav {
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+    .verificaçaõ-- {
+        padding-right: 28px;
+        padding-left: 28px;
+    }
+    .check {
+        display: none;
+    }
+    .txt-check {
+        display: none;
+    }
+    .menu-section {
+        background: none;
+        border: none;
+    }
+    .menu-section {
+        width: 42px;
+    }
+    .menu-icon {
+        width: 42px;
+    }
 }
