@@ -1,0 +1,195 @@
+body {
+    background: #040404;
+    font-family: inter;
+    color: #F1F1F1;
+}
+
+nav {
+    padding: 34px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.menu-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    width: 200px;
+    margin: 0;
+
+    border-radius: 10px;
+    border: 4px solid var(--black--6, #212121);
+    background: var(--black--3, #0D0D0D);
+}
+
+.verificaçaõ-- {
+    padding-top: 80px;
+    padding-left: 134px;
+    display: flex;
+    width: 703px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+}
+
+.conju--verifi {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.title-h2 {
+    color: var(--white--1, #F1F1F1);
+    margin: 0;
+    /* H2 */
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.title-h4 {
+    color: var(--white--3, #989898);
+    margin: 0;
+    /* H4 */
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}.orion-style-txt {
+    color: var(--white--1, #F1F1F1);
+
+    /* H4 */
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.title-h3 {
+    color: var(--white--1, #F1F1F1);
+
+    /* H3 */
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.campo-code {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 34px;
+    align-self: stretch;
+}
+
+.input-code {
+    color: #F1F1F1;
+
+    /* TT Input */
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    outline: none;
+    width: 100%;
+    background: none;
+    border: none;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--black--8, #434343);
+}
+
+.input-code:focus {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--white--1, #f1f1f1);
+    
+}
+
+.input-code:invalid {
+    border-bottom: 2px solid var(--error, #F87171);
+}
+
+.input-code:invalid::placeholder {
+    color: #F87171;
+}
+
+.input-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.TT-description {
+    color: var(--error, #F87171);
+
+    /* TT Description */
+    margin: 0;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.button-code {
+    margin: 0;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.button-procurar-code {
+    color: var(--black---2, #080808);
+
+    /* TT BT 1 */
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    background: var(--white--1, #F1F1F1);
+
+    display: flex;
+    width: 100%;
+    padding: 20px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}.button-procurar-code:hover {
+    color: var(--black---1, #040404);
+    background: var(--white--3, #989898);
+}
+
+.description {
+    color: var(--black--8, #434343);
+
+    /* TT Description */
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.descript-hover {
+    color: var(--white--3, #989898);
+
+    /* TT Description */
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

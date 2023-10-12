@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="./src/images/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/body.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <meta name="description" content="">
+    <meta property="og:image" content="">
+    <title>Verificação de Autenticidade - ORION (BR)</title>
+</head>
+<body>
+    <nav>
+        <div></div>
+        <img class="logo-home" src="./src/images/logo-orion-full.svg" alt="">
+        <div class="sec-menu">
+            <div class="menu-section">
+                <img src="./src/images/check-menu.svg" alt="">
+                <p>Check Shirt</p>
+                <img src="./src/images/menu-icon.svg" alt="">
+            </div>
+        </div>
+    </nav>
+     <section class="verificaçaõ--">
+        <div class="conju--verifi">
+            <h1 class="title-h2">Verificação de Autenticidade</h1>
+            <h2 class="title-h4">Certifique-se de que sua <span class="orion-style-txt">ORION</span> é genuína e desfrute da verdadeira excelência
+                em moda inserindo o código encontrado na sua camiseta <span class="orion-style-txt">ORION</span>.
+            </h2>
+        </div>
+        <div class="campo-code">
+            <h3 class="title-h3">Insira o código encontrado na sua camiseta ORION:</h3>
+            <div class="input-section">
+                <input class="input-code" placeholder="Insira o código de verificação" required type="text">
+                <p id="TT-" class="TT-description">Código não encontrado</p>
+            </div>
+        </div> 
+        <div class="button-code">
+            <div class="button-procurar-code" onclick="clearInput()">Pesquisar</div>
+            <p class="description">Ao clicar em <span class="descript-hover">Pesquisar</span>, você concorda com nossa <span class="descript-hover">Política de Privacidade</span>.</p>
+        </div>
+
+        
+        <script>
+            const inputElement = document.querySelector('input');
+            const errorMessage = document.getElementById('TT-');
+            
+            inputElement.addEventListener('focus', function() {
+              errorMessage.style.display = 'none'; // Ocultar o aviso ao clicar no campo
+            });
+            
+            inputElement.addEventListener('blur', function() {
+              if (!inputElement.validity.valid) {
+                errorMessage.style.display = 'block'; // Exibir o aviso se o campo for inválido ao perder o foco
+              }
+            });
+
+            function clearInput() {
+            inputElement.value = ''; // Limpa o conteúdo do campo de entrada
+            errorMessage.style.display = 'block'; // Oculta a mensagem de erro
+            }
+        </script>
+        
+</html>
